@@ -1,11 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.1.0 https://maven.apache.org/xsd/maven-4.1.0.xsd" root="true">
+  <modelVersion>4.1.0</modelVersion>
   <groupId>com.gradle</groupId>
   <artifactId>maven-build-scan-quickstart</artifactId>
-  <packaging>jar</packaging>
-  <version>1.0</version>
-
+  <packaging>pom</packaging>
+  <version>1.0.0</version>
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
@@ -31,6 +30,17 @@
       <artifactId>junit-jupiter</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.gradle</groupId>
+      <artifactId>module1</artifactId>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
+
+  <modules>
+    <module>module1</module>
+    <module>module2</module>
+    <module>module3</module>
+  </modules>
 
 </project>

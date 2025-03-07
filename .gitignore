@@ -9,7 +9,7 @@
 
 # MAVEN
 # -----
-/target
+target
 .mvn/.gradle-enterprise/gradle-enterprise-workspace-id
 
 # OS X

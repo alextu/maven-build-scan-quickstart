@@ -1,0 +1,22 @@
+<develocity>
+    <server>
+        <url>http://localhost:5086/</url>
+        <allowUntrusted>true</allowUntrusted>
+    </server>
+
+    <buildScan>
+        <termsOfUse>
+            <!-- Address of the terms of use. Must be 'https://gradle.com/help/legal-terms-of-use'.
+            Defaults to an empty string. System property is 'develocity.scan.termsOfUse.url'. -->
+            <url>https://gradle.com/help/legal-terms-of-use</url>
+            <!-- Signal acceptance of the terms of use. Must be 'true'. Defaults to false. System
+            property is 'develocity.scan.termsOfUse.accept'. -->
+            <accept>true</accept>
+        </termsOfUse>
+    </buildScan>
+    <buildCache>
+        <local>
+            <enabled>false</enabled>
+        </local>
+    </buildCache>
+</develocity>
